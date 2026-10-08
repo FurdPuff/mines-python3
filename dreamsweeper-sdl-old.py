@@ -263,7 +263,7 @@ class DreamBoard(object):
 
         probabilities, _dummy = solver.get_probabilities()
         
-        items = list(probabilities.iteritems())
+        items = list(probabilities.items())
         random.shuffle(items)
         
         x, y = min(items, key=self._hint_score)[0]
@@ -383,7 +383,7 @@ def run(width, height, count):
         cur_count = count - len(list(x for x in board.values if x == MINE))
         if cur_count != prev_count:
             prev_count = cur_count
-            print cur_count
+            print(cur_count)
 
         draw_board(board, switches)
         
