@@ -1,3 +1,6 @@
+This is a fork of madewokherd's minesweeper solver: https://github.com/madewokherd/mines
+All I contributed to this project was updating outdated syntax to Python 3
+
 mines.py is a Minesweeper (and picma squared) solver I wrote for fun. It is
 geometry-agnostic, so if you want it to solve minesweeper on a hexagonal grid,
 the surface of a cube, or a 4-dimensional grid, it's got you covered (although
